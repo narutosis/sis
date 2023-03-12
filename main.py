@@ -22,7 +22,7 @@ for i in range(n):
     sum2 += math.cos((i + 0.5) * t[1] / n) * (t[1] / n)
 
 for i in range(n):
-    sum3 += math.cos((random.random() + i) * t[1] / n) * (t[1] / n)
+    sum3 += math.cos((i + random.random()) * t[1] / n) * (t[1] / n)
 
 
 print(math.sin(4))

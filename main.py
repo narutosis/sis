@@ -25,8 +25,7 @@ for i in range(n):
     fun.replace('(i + 0.5) * t[1] / n', "x")
 
 for i in range(n):
-    sum3 += eval(fun.replace("x", "(random.random() + 1) * t[1] / n")) * (t[1] / n)
-    fun.replace("(random.random() + 1) * t[1] / n", "x")
+    sum3 += eval(fun.replace("x", "(random.random() + i) * t[1] / n")) * (t[1] / n)
+    fun.replace("(random.random() + i) * t[1] / n", "x")
 
-print(math.sin(4))
 print(round(sum, 9), round(sum1, 9), round(sum2, 9), round(sum3, 9), sep='\n')

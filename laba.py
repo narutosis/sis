@@ -3,28 +3,24 @@ leftRange = input()
 rightRange = input()
 n = input()
 method = input()
-
-
 def InegralSum(funk, leftRange, rightRange, n, method):
-    sum = 0
-    if method == 1:
+    sum =0
+    if method==1:
         for i in range(n):
-            sum += eval(funk.replace("x", 'i * rightRange -  leftRange / n')) * (rightRange - leftRange / n)
+            sum+= eval(funk.replace("x", 'i * rightRange -  leftRange / n')) * (rightRange -  leftRange / n)
             funk.replace('i * rightRange -  leftRange / n', "x")
-    elif method == 2:
+    elif method==2:
         for i in range(n):
-            sum += eval(funk.replace("x", '(i + 1) * rightRange -  leftRange / n')) * (rightRange - leftRange / n)
+            sum+= eval(funk.replace("x", '(i + 1) * rightRange -  leftRange / n')) * (rightRange -  leftRange / n)
             funk.replace('(i + 1) * rightRange -  leftRange / n', "x")
-    elif method == 3:
+    elif method==3:
         for i in range(n):
-            sum += eval(funk.replace("x", '(i + 0.5) * rightRange -  leftRange / n')) * (rightRange - leftRange / n)
+            sum+=eval(funk.replace("x", '(i + 0.5) * rightRange -  leftRange / n')) * (rightRange -  leftRange / n)
             funk.replace('(i + 0.5) * rightRange -  leftRange / n', "x")
-    elif method == 4:
+    elif method==4:
         for i in range(n):
-            sum += eval(funk.replace("x", "(random.random() + 1) * rightRange -  leftRange / n")) * (
-                        rightRange - leftRange / n)
+            sum+=eval(funk.replace("x", "(random.random() + 1) * rightRange -  leftRange / n")) * (rightRange -  leftRange / n)
             funk.replace("(random.random() + 1) * rightRange -  leftRange / n", "x")
     return sum
-
 
 print(InegralSum(funk, leftRange, rightRange, n, method))

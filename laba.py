@@ -1,4 +1,3 @@
-from main import fun
 
 funk = input()
 leftRange = input()
@@ -6,7 +5,7 @@ rightRange = input()
 n = input()
 method = input()
 def InegralSum(funk, leftRange, rightRange, n, method):
-    sun =0
+    sum =0
     if method==1:
         for i in range(n):
             sum+= eval(funk.replace("x", 'i * rightRange -  leftRange / n')) * (rightRange -  leftRange / n)

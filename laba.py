@@ -21,9 +21,9 @@ def InegralSum(funk, leftRange, rightRange, n, method):
             funk.replace('(i + 0.5) * rightRange -  leftRange / n', "x")
     elif method == 4:
         for i in range(n):
-            sum += eval(funk.replace("x", "random.random() + 1) * rightRange -  leftRange / n")) * (
+            sum += eval(funk.replace("x", "(random.random() + 1) * rightRange -  leftRange / n")) * (
                         rightRange - leftRange / n)
-            funk.replace("random.random() + 1) * rightRange -  leftRange / n", "x")
+            funk.replace("(random.random() + 1) * rightRange -  leftRange / n", "x")
     return sum
 
 

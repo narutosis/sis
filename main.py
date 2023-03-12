@@ -22,8 +22,8 @@ for i in range(n):
     sum2 += math.cos((i + 0.5) * t[1] / n) * (t[1] / n)
 
 for i in range(n):
-    sum3 += math.cos((random.random()) * t[1] / n) * (t[1] / n)
+    sum3 += math.cos((random.random() + i) * t[1] / n) * (t[1] / n)
 
 
 print(math.sin(4))
-print(round(sum, 6), round(sum1, 6), round(sum2, 6), round(sum3, 6), sep='\n')
+print(round(sum, 9), round(sum1, 9), round(sum2, 9), round(sum3, 9), sep='\n')

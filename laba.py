@@ -29,7 +29,7 @@ def InegralSum(funk, leftRange, rightRange, n, method):
     return sum
 
 
-print(InegralSum(funk, leftRange, rightRange, n, 1))
+print(InegralSum(funk, leftRange, rightRange, n, method))
 print(InegralSum(funk, leftRange, rightRange, n, 2))
 print(InegralSum(funk, leftRange, rightRange, n, 3))
 print(InegralSum(funk, leftRange, rightRange, n, 4))

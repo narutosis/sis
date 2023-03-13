@@ -45,6 +45,7 @@ def Grafix(funk, funkSum, leftRange, rightRange, n):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.plot(X, funkY, label="funk")
+    plt.bar(X, funkY, edgecolor = 'blue', linestyle = '--', alpha = 0.1, align='edge')
     plt.legend()
     print()
     plt.show()

@@ -2,7 +2,7 @@
 1+x+math.cos(math.pi*x/2)
 0
 4
-10000
+100000
 1
 1+x+math.cos(math.pi*x/2)
 0 4

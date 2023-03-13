@@ -4,6 +4,10 @@ x+1+math.cos(x)
 4
 10000
 1
+1+x+math.cos(math.pi*x/2)
+0 4
+10000
+1
 
 
 x+1+math.cos(x)

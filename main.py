@@ -11,9 +11,10 @@ sum = 0
 sum1 = 0
 sum2 = 0
 sum3 = 0
+fun = fun.replace("x", 'i * t[1] / n')
 
 for i in range(n):
-    sum += eval(fun.replace("x", 'i * t[1] / n')) * (t[1] / n)
+    sum += eval(fun) * (t[1] / n)
     fun.replace('i * t[1] / n', "x")
 
 for i in range(n):

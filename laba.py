@@ -23,10 +23,13 @@ def InegralSum(funk, leftRange, rightRange, n, method):
         for i in range(n):
             sum += eval(funk) * ((int(rightRange) - int(leftRange)) / n)
     elif method == 4:
-        funk = funk.replace("x", "(random.random() + 1) * (rightRange -  leftRange) / n")
+        funk = funk.replace("x", "(random.random() + i) * (rightRange -  leftRange) / n")
         for i in range(n):
             sum += eval(funk) * ((int(rightRange) - int(leftRange)) / n)
     return sum
 
 
-print(InegralSum(funk, leftRange, rightRange, n, method))
+print(InegralSum(funk, leftRange, rightRange, n, 1))
+print(InegralSum(funk, leftRange, rightRange, n, 2))
+print(InegralSum(funk, leftRange, rightRange, n, 3))
+print(InegralSum(funk, leftRange, rightRange, n, 4))
